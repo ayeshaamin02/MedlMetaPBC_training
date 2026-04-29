@@ -8,15 +8,6 @@ example:
     EfficientNetV2S:   Round1..Round5
     SwinBase:          Round1..Round5
 
-The script treats each row in metrics_summary.csv as one independent run. For
-each numeric metric, it compares model families using:
-    - Classical one-way ANOVA
-    - Kruskal-Wallis non-parametric test
-    - Levene variance test
-    - Shapiro normality test per model group, when enough runs exist
-    - Eta-squared and omega-squared effect sizes
-    - Optional Tukey HSD pairwise tests, if statsmodels is installed
-
 """
 
 from __future__ import annotations
