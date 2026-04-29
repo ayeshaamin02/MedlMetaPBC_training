@@ -1,0 +1,20 @@
+# local environments and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# datasets, model weights, and large run outputs
+data/
+results/
+logs/
+*.pt
+*.pth
+*.safetensors
+*.zip
+
+# credentials
+.env
+*.env
+*huggingface*token*
