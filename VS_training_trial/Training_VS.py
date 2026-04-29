@@ -1,14 +1,5 @@
 #!/usr/bin/env python3
-"""
-Train one ANOVA round for MedIMeta-PBC multiclass image classification.
 
-Model: ConvNeXtV2 Base via timm:
-    timm.create_model("convnextv2_base.fcmae", pretrained=True, num_classes=8)
-
-This file is written with VS Code/Jupyter-style "# %%" cells. You can press
-"Run Cell" section-by-section in VS Code now, and later run the same file from
-the terminal for server training.
-"""
 
 # %% Imports and constants
 from __future__ import annotations
