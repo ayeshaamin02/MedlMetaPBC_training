@@ -4,8 +4,6 @@ Create_XAI_Combined_Figure.py
 Creates one clean combined Grad-CAM figure from:
     xai_results/GradCAM_BestRuns/
 
-Output:
-    xai_results/GradCAM_BestRuns/GradCAM_BestRuns_Combined.png
 """
 
 from pathlib import Path

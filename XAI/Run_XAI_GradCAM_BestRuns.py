@@ -1,35 +1,8 @@
 """
 Run_XAI_GradCAM_BestRuns.py
 
-Purpose
--------
 Generate one Grad-CAM XAI result for the best run of each trained model family.
 
-This script is designed for the PBC multiclass training project. It reads the
-combined ANOVA metrics CSV, selects the best run per model family using highest
-test macro-F1 by default, downloads that run's weights/best_model.pt from
-Hugging Face, loads the matching timm model, and creates one Grad-CAM overlay
-per model.
-
-Default input:
-    statistical_analysis/anova/combined_metrics_summary.csv
-
-Default output:
-    xai_results/GradCAM_BestRuns/
-
-The script saves one result folder per model family:
-    original_image.png
-    heatmap.png
-    gradcam_overlay.png
-    prediction_info.csv
-    README_XAI.txt
-
-Notes
------
-- This uses PyTorch only for XAI hooks; no TensorFlow.
-- It uses CPU by default on Mac unless MPS is available.
-- It supports CUDA if you later run it on a server.
-- The best run is selected from final test metrics, not training curves.
 """
 
 from __future__ import annotations
