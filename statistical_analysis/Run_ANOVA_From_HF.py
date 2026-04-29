@@ -1,8 +1,4 @@
 """
-Run_ANOVA_From_HF.py
-
-Purpose
--------
 Download metrics_summary.csv files from a Hugging Face results repository and run
 one-way statistical comparisons across model families.
 
@@ -21,11 +17,6 @@ each numeric metric, it compares model families using:
     - Eta-squared and omega-squared effect sizes
     - Optional Tukey HSD pairwise tests, if statsmodels is installed
 
-Important
----------
-ANOVA is meaningful only when each model has repeated runs, ideally with the
-same seeds and same data split. With fewer than 2 model families, it is not a
-model-comparison ANOVA.
 """
 
 from __future__ import annotations

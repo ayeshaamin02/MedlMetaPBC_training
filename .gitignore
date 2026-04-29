@@ -9,6 +9,8 @@ __pycache__/
 data/
 results/
 logs/
+!XAI/Results/
+!XAI/Results/*.png
 *.pt
 *.pth
 *.safetensors
